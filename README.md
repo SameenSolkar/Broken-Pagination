@@ -78,8 +78,6 @@ The server simulates a broken pagination API with two random bugs:
 | Fewer items | 40% | Returns 1–9 items instead of 10 |
 | Overlapping items | 40% | Shifts the start index back by 1–3, causing items from the previous page to reappear |
 
-The `_bugs` field in each response shows which bugs fired, useful for debugging in the Network tab.
-
 ## How the app handles it
 
 - **Infinite scroll** — fetches the next page when the user scrolls to the bottom
